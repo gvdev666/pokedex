@@ -77,7 +77,7 @@ session_start();
                         <a class="nav-link" href="mis_objetos.php">Mis Objetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link 4</a>
+                        <a class="nav-link" href="perfil.php">Mi Perfil</a>
                     </li>
                 </ul>
             </div>
