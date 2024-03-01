@@ -46,6 +46,9 @@
       </div>
       <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
     </form>
+    <div class="row">
+      <a href="register.php">No estas registrado?</a>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
