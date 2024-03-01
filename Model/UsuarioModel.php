@@ -7,12 +7,12 @@ class UsuarioModel {
         $this->conn = $conn;
     }
 
-    public function registrarUsuario($nombre, $genero, $contrasena) {
+    public function registrarUsuario($nombre, $genero, $usuario, $contrasena) {
         $contrasenaHash = password_hash($contrasena, PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO entrenadores (nombre, genero, contrasena) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO entrenadores (nombre, genero, usuario, contrasena) VALUES (?, ?, ?, ?)";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bind_param("sss", $nombre, $genero, $contrasenaHash);
+        $stmt->bind_param("ssss", $nombre, $genero, $usuario, $contrasenaHash);
 
         if ($stmt->execute()) {
             return true;

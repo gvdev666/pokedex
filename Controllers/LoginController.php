@@ -15,10 +15,11 @@ class LoginController {
         if ($entrenador && password_verify($contrasena, $entrenador['contrasena'])) {
             // Inicio de sesión exitoso
             session_start();
-            $_SESSION['usuario'] = $entrenador['id'];
+            $_SESSION['usuario'] = $entrenador['usuario'];
             // Puedes almacenar más información del usuario en la sesión si es necesario
             $_SESSION['nombre'] = $entrenador['nombre'];
             $_SESSION['genero'] = $entrenador['genero'];
+            $_SESSION['user_id'] = $entrenador['id'];
             // Redirigir a la página principal o a otra página después del inicio de sesión
             header("Location: ../main/index.php");
             exit();

@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $registroController = new RegistroController($conn);
 
     // Llamar al método para registrar al usuario
-    $registroController->registrarUsuario($nombre, $genero, $contrasena);
+    $registroController->registrarUsuario($nombre, $genero, $contrasena, $usuario);
 }
 
 // Redireccionar a la página principal o mostrar algún mensaje

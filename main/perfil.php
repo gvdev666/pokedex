@@ -1,9 +1,6 @@
 <?php
 session_start();
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,8 +63,8 @@ session_start();
                     <img src="<?php echo $avatar_url; ?>" alt="Avatar" class="profile-image mx-auto d-block">
                 </div>
                 <div class="col-md-8">
-                    <h2><?php echo isset($_SESSION['user_name']) ? $_SESSION['user_name'] : 'Nombre Desconocido'; ?></h2>
-                    <p>Correo Electrónico: <?php echo isset($_SESSION['user_email']) ? $_SESSION['user_email'] : 'Correo Desconocido'; ?></p>
+                    <h2><?php echo isset($_SESSION['nombre']) ? $_SESSION['nombre'] : 'Nombre Desconocido'; ?></h2>
+                    <p>Correo Electrónico: <?php echo isset($_SESSION['usuario']) ? $_SESSION['usuario'] : 'Correo Desconocido'; ?></p>
                     <!-- Otros detalles del perfil -->
                 </div>
                 <div class="mt-4">
