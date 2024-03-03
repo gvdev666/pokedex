@@ -18,7 +18,7 @@ class UsuarioModel
 
         // Nota: El orden de los parámetros en bind_param debe coincidir con el orden en la consulta SQL
         $stmt->bind_param("ssss", $nombre, $genero, $usuario, $contrasenaHash);
-
+       
         if ($stmt->execute()) {
             return true;
         } else {

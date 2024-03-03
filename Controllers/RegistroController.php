@@ -9,8 +9,8 @@ class RegistroController {
         $this->usuarioModel = new UsuarioModel($conn);
     }
 
-    public function registrarUsuario($nombre, $genero, $contrasena, $usuario) {
-        $registroExitoso = $this->usuarioModel->registrarUsuario($nombre, $genero, $contrasena, $usuario);
+    public function registrarUsuario($nombre, $genero, $usuario, $contrasena) {
+        $registroExitoso = $this->usuarioModel->registrarUsuario($nombre, $genero, $usuario, $contrasena);
         
         if ($registroExitoso) {
             echo "Registro exitoso";
